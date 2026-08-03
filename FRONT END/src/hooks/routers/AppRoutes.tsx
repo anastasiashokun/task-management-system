@@ -6,73 +6,7 @@ import DailyPage from "../../pages/DailyPage";
 import Layout from "../../components/layout/layout";
 import Routes from "./routes.enum";
 
-// export const getPrivateRoutes = () => {
-//     return [
-//         {
-//             path: Routes.Home, 
-//             element: 
-//             <Layout>
-//                 <HomePage/>
-//             </Layout>
-//         }, 
-//         {
-//             path: Routes.DailyPage,
-//             element: 
-//             <Layout>
-//                 <DailyPage/>
-//             </Layout>
-//         }, 
-//         {
-//             path: Routes.InstructionPage, 
-//             element: 
-//             <Layout>
-//                 <InstructionPage/>
-//             </Layout>
-//         },
-//         {
-//                 path: Routes.ContactsPage, 
-//             element: 
-//             <Layout>
-//                 <ContactsPage/>
-//             </Layout>
-//         },
-        
-//     ]
 
-// }
-// const useRouter = () => {
-//   return createBrowserRouter(
-//     [
-      
-//       {
-//         path: Routes.Home,
-//         element: (
-//             <div>
-//                 <Outlet />
-//             </div>
-//         ),
-
-//         children: [
-//           ... getPrivateRoutes(),
-
-//           {
-//             path: '*',
-//             element: (
-//                 <Navigate to={Routes.Home} />
-//             ),
-//           },
-//         ],
-//       },
-//       {
-//         index: true,
-//         element: <Navigate to={Routes.Home} />,
-//       },
-//     ],
-//   );}
-
-
-
-// export default useRouter
 const useRouter = () => {
   return createBrowserRouter([
     {

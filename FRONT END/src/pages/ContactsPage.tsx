@@ -83,7 +83,7 @@ const ContactsPage = () => {
                 '&:hover': { textDecoration: 'underline' }
               }}
             >
-              github.com/nastyashokun
+              github.com/anastasiashokun
             </Typography>
           </Box>
         </Box>
@@ -120,7 +120,7 @@ const ContactsPage = () => {
                 '&:hover': { textDecoration: 'underline' }
               }}
             >
-              linkedin.com/in/nastyashokun
+              linkedin.com/in/anastasiashokun
             </Typography>
           </Box>
         </Box>
