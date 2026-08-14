@@ -32,16 +32,13 @@ const Header: FC = () => {
       <HeaderAppBar position="static">
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           
-          {/* Логотип + назва — клікабельні, ведуть на головну */}
           <div
             onClick={() => navigate(Routes.Home)}
             style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
           >
-            <HeaderImage src="src/assets/Task.jpg" alt="logo" width={70} height={70} />
-            <HeaderTypography>Task management system</HeaderTypography>
-          </div>
+        <HeaderImage src="/Task.jpg" alt="logo" width={70} height={70} />      </div>
 
-          {/* Меню */}
+   
           <div>
             <HeaderButton
               id="demo-positioned-button"
