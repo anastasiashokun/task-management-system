@@ -1,6 +1,6 @@
 import { Typography, Menu, MenuItem, Toolbar } from "@mui/material"
 import { FC } from "react"
-import { HeaderButton, HeaderAppBar, HeaderImage, HeaderTypography } from "../stylesComponents/stylesLayout"
+import { HeaderButton, HeaderAppBar, HeaderImage } from "../stylesComponents/stylesLayout"
 import React from "react"
 import Routes from '../../hooks/routers/routes.enum'
 import { useNavigate } from "react-router-dom"
