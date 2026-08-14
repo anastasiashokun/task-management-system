@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     <HeaderAppBar position="static">
       <Container sx={{ py: 4 }}>
         <Grid container spacing={8}>
-          <Grid item xs={12} md={8}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Typography sx={{ fontFamily: 'Josefin Sans', fontWeight: 700, mb: 1 }}>
               Any questions?
             </Typography>
@@ -32,8 +32,7 @@ const Footer: React.FC = () => {
               />
             </ListItem>
           </Grid>
-
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Typography sx={{ fontFamily: 'Josefin Sans', fontWeight: 700, mb: 1 }}>
               Pages
             </Typography>
