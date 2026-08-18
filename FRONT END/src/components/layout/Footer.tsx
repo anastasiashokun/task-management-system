@@ -2,7 +2,7 @@ import React from 'react';
 import {  Container, Typography, Link,  ListItem,  Grid, ListItemText } from '@mui/material';
 import Routes from '../../hooks/routers/routes.enum'
 import {  HeaderAppBar } from "../stylesComponents/stylesLayout"
-
+import { Link as RouterLink } from 'react-router-dom';
 
 const menu = [
     {tittle: 'Tasks', url: Routes.DailyPage },
@@ -36,18 +36,18 @@ const Footer: React.FC = () => {
             <Typography sx={{ fontFamily: 'Josefin Sans', fontWeight: 700, mb: 1 }}>
               Pages
             </Typography>
-            {menu.map((item) => (
-              <ListItem key={item.tittle}>
-                <ListItemText
-                  primary={
-                    <Link href={item.url} color="inherit">
-                      {item.tittle}
-                    </Link>
-                  }
-                  sx={{ color: '#fff', fontFamily: 'Josefin Sans' }}
-                />
-              </ListItem>
-            ))}
+           {menu.map((item) => (
+        <ListItem key={item.tittle}>
+    <ListItemText
+      primary={
+        <Link component={RouterLink} to={item.url} color="inherit">
+          {item.tittle}
+        </Link>
+      }
+      sx={{ color: '#fff', fontFamily: 'Josefin Sans' }}
+    />
+  </ListItem>
+             )    )}
           </Grid>
         </Grid>
 
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
           align="center"
           sx={{ mt: 4, fontFamily: 'Josefin Sans', opacity: 0.7 }}
         >
-          &copy; 2025. Have a nice day!
+          &copy; 2026. Have a nice day!
         </Typography>
       </Container>
     </HeaderAppBar>
